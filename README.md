@@ -38,7 +38,7 @@ Type2Talk is a background selfbot that reads your own Discord messages aloud usi
    - Find the folder that ends with `essentials_build\bin`
      (e.g., `C:\ffmpeg\ffmpeg-2025-03-31-git-xxxxxx-essentials_build\bin`)
 
-   🔧 Now, add FFmpeg to your system's PATH:
+   🔧 Now, add FFmpeg to your system and user PATH:
    - Open Windows Search > Search for: **environment**
    - Click: **Edit the system environment variables**
    - In the new window, click: **Environment Variables**
