@@ -75,3 +75,19 @@ Type2Talk is a background selfbot that reads your own Discord messages aloud usi
 -------------------------------------
 
 Enjoy using Type2Talk!
+
+
+HOW TO SELECT THE SPEAKER AFTER THE VB INSTALLATION AND RESTARTING THE SYSTEM
+![Screenshot 2025-04-20 215826](https://github.com/user-attachments/assets/e1167e62-bdc0-45c6-8fd9-94e03025609e)
+![Screenshot 2025-04-20 215748](https://github.com/user-attachments/assets/0908d6f6-49c1-4312-a430-6c3ad23245e3)
+SELECT YOUR OUTPUT DEVICE THAT YOU NORMALLY USE TO LISTEN TO AUDIO
+
+HOW TO ADD FFMPEG INTO YOUR SYSTEM AND USER PATH
+![Screenshot 2025-04-20 213857](https://github.com/user-attachments/assets/a62e9fb6-542a-4e43-860e-beb00e3a0d7c)
+![Screenshot 2025-04-20 213925](https://github.com/user-attachments/assets/1a2ffb96-6fe6-4bb6-8be5-8d4f52f302fd)
+![Screenshot 2025-04-20 214217](https://github.com/user-attachments/assets/cbd3b947-b20e-43e0-8441-83e5fa47c913)
+
+
+
+
+
