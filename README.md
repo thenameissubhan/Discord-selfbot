@@ -1,2 +1,77 @@
-# Type2Talk
+Type2Talk - Selfbot TTS for Discord
+-------------------------------------
+
+🔊 Description:
 Type2Talk is a background selfbot that reads your own Discord messages aloud using realistic AI text-to-speech (TTS). It sends the voice to your mic using VB-CABLE, so others on a call can hear it as if you're speaking.
+
+-------------------------------------
+📦 Files Included:
+- Type2Talk.exe         → Main executable
+- text-to-speech.ico    → System tray icon
+- README.txt            → This instruction file
+- config.json           → (Auto-generated after first run)
+
+-------------------------------------
+🖥️ System Requirements:
+- Windows 10 or newer
+- Internet connection
+- Discord account
+- VB-CABLE installed
+- FFmpeg configured (see below)
+
+-------------------------------------
+🧩 Required Tools & Setup:
+
+1. ✅ VB-CABLE (Virtual Audio Driver)
+   - Download from: https://vb-audio.com/Cable/
+   - Install the driver by running the **setup.exe** inside.
+   - 🔁 Restart your PC after installation.
+   - In Discord > **Settings > Voice & Video**:
+     - Set **Input Device** to `CABLE Output (VB-Audio)`
+     - Set **Output Device** to your regular speakers/headphones
+   - 📌 After restart, your default output may change — manually switch it back to your speakers if needed.
+
+2. ✅ FFmpeg (For audio processing)
+   - Download from: https://www.gyan.dev/ffmpeg/builds/
+   - Scroll down and download **ffmpeg-git-essentials.7z**
+   - Extract it to a folder (e.g., `C:\ffmpeg`)
+   - Find the folder that ends with `essentials_build\bin`
+     (e.g., `C:\ffmpeg\ffmpeg-2025-03-31-git-xxxxxx-essentials_build\bin`)
+
+   🔧 Now, add FFmpeg to your system's PATH:
+   - Open Windows Search > Search for: **environment**
+   - Click: **Edit the system environment variables**
+   - In the new window, click: **Environment Variables**
+   - Under "System Variables", find and **double-click `Path`**
+   - Click **New** and paste the full path to the FFmpeg `/bin` folder (e.g., `C:\ffmpeg\...essentials_build\bin`)
+   - Click OK on all windows to save.
+
+   ✅ Done! FFmpeg is now available system-wide.
+
+-------------------------------------
+🚀 First Time Setup:
+
+1. Double-click **Type2Talk.exe**
+2. On first launch, you’ll be prompted to enter:
+   - Your **Discord User ID**
+   - Your **Discord Token**
+   - Preferred **TTS Voice** (e.g., `en-US-GuyNeural`)
+3. These settings will be saved to `config.json`
+4. The program run in the background.
+
+-------------------------------------
+⚙️ Updating Settings:
+- Open `config.json` in any text editor.
+- Edit your voice, token, or user ID manually.
+- Save and restart the program.
+
+-------------------------------------
+❗ Important Notes:
+- This is a **selfbot**, meaning it automates a user account.
+- Selfbots are against Discord’s official Terms of Service.
+- Use responsibly and only in private servers or for personal use.
+- Never share your Discord token with anyone!
+
+-------------------------------------
+
+Enjoy using Type2Talk!
