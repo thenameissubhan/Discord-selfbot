@@ -1,9 +1,0 @@
-How to Get a Discord User Token
-- Log in to Discord at Discord.com.
-- After successfully logging in, press F12 to open the Developer Tools.
-- Go to the Network tab and type /api in the search bar.
-- A list of files will appear. Find @me and click on it.
-- In the Headers section, scroll down and look for Authorization:.
-- Copy the full authorization code—that's your user token.
-
-
