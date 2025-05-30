@@ -1,0 +1,30 @@
+# ⚠️ IMPORTANT: Discord Settings for `/cmd` to Work Properly
+
+If you're using **Type2Talk v2** and want to use the `/cmd` command to play music so that **others can hear it clearly**, you **must disable Noise Suppression** in Discord's voice settings.
+
+---
+
+## 🔧 Required Setting:
+
+### ✅ Disable Noise Suppression
+- Go to **Discord > Settings > Voice & Video**
+- Scroll down and **NONE** the option labeled:
+  > **Noise Suppression**
+
+This is essential. If you leave it enabled, Discord will suppress the music and other users will **not hear it properly**.
+
+---
+
+## 🎚️ Optional Setting (Recommended for Better Audio):
+
+### ❓ Disable "Automatically Determine Input Sensitivity"
+- Turn OFF the setting:
+  > **Automatically determine input sensitivity**
+- Set the manual slider to **-70 dB**
+
+This step is optional, but recommended for **clearer and more consistent audio output**. You can adjust it based on your preference or system performance.
+
+---
+
+🚨 If you don't turn off **Noise Suppression**, music will still play — but others on the call may hear it **muffled or not at all** due to Discord's audio filtering.
+
