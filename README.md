@@ -1,90 +1,111 @@
-Type2Talk - Selfbot TTS for Discord
--------------------------------------
+# 🔊 **Type2Talk - Selfbot TTS for Discord**
 
-🔊 Description:
-Type2Talk is a background selfbot that reads your own Discord messages aloud using realistic AI text-to-speech (TTS). It sends the voice to your mic using VB-CABLE, so others on a call can hear it as if you're speaking.
--------------------------------------
+**Type2Talk** is a background selfbot that reads your own Discord messages aloud using **realistic AI text-to-speech (TTS)**. It sends the voice to your mic using **VB-CABLE**, so others on a call can hear it as if you're speaking.
 
-Type2Talk v2 has the same features as the older version, but one thing has been added in v2: the /cmd function. This means you can play a song using /cmd in any server you want, and the audio will pass through both the Discord input channel and your local speaker.
-Use /cmd list to learn how the command works and its functions.
--------------------------------------
--------------------------------------
-🖥️ System Requirements:
-- Windows 10 or newer
-- Internet connection
-- Discord account
-- VB-CABLE installed
-- FFmpeg configured (see below)
+> ⚠️ **Selfbot Notice:** This project uses a selfbot (a bot that runs on a user account), which is against Discord’s Terms of Service. Use responsibly and only in private servers or for personal use.
 
--------------------------------------
-🧩 Required Tools & Setup:
+---
 
-1. ✅ VB-CABLE (Virtual Audio Driver)
-   - Download from: https://vb-audio.com/Cable/
-   - Install the driver by running the **setup.exe** inside.
-   - 🔁 Restart your PC after installation.
-   - In Discord > **Settings > Voice & Video**:
-     - Set **Input Device** to `CABLE Output (VB-Audio)`
-     - Set **Output Device** to your regular speakers/headphones
-   - 📌 After restart, your default output may change — manually switch it back to your speakers if needed.
+## 🚀 What's New in v2
 
-2. ✅ FFmpeg (For audio processing)
-   - Download from: https://www.gyan.dev/ffmpeg/builds/
-   - Scroll down and download **ffmpeg-git-essentials.7z**
-   - Extract it to a folder (e.g., `C:\ffmpeg`)
-   - Find the folder that ends with `essentials_build\bin`
-     (e.g., `C:\ffmpeg\ffmpeg-2025-03-31-git-xxxxxx-essentials_build\bin`)
+Type2Talk v2 includes everything from the older version, with one major addition:
 
-   🔧 Now, add FFmpeg to your system and user PATH:
-   - Open Windows Search > Search for: **environment**
-   - Click: **Edit the system environment variables**
-   - In the new window, click: **Environment Variables**
-   - Under "System Variables", find and **double-click `Path`**
-   - Click **New** and paste the full path to the FFmpeg `/bin` folder (e.g., `C:\ffmpeg\...essentials_build\bin`)
-   - Click OK on all windows to save.
+- ✅ New `/cmd` function:
+  - Use `/cmd` to play a song in any server.
+  - Audio will play through both your **Discord input** and **local speaker**.
+  - Use `/cmd list` to view available commands and functions.
 
-   ✅ Done! FFmpeg is now available system-wide.
+---
 
--------------------------------------
-🚀 First Time Setup:
+## 🖥️ System Requirements
 
-1. Double-click **Type2Talk.exe**
-2. On first launch, you’ll be prompted to enter:
+- Windows 10 or newer  
+- Internet connection  
+- Discord account  
+- **VB-CABLE** installed  
+- **FFmpeg** configured (see below)
+
+---
+
+## 🧩 Required Tools & Setup
+
+### 1. ✅ **VB-CABLE (Virtual Audio Driver)**  
+🔗 [Download here](https://vb-audio.com/Cable/)
+
+- Run `setup.exe` to install.
+- 🔁 **Restart your PC** after installation.
+- In **Discord > Settings > Voice & Video**:
+  - Set **Input Device** to `CABLE Output (VB-Audio)`
+  - Set **Output Device** to your normal speakers/headphones
+- ⚠️ After restart, your system might default to the wrong output device — **manually set it back** to your usual speaker.
+
+### 2. ✅ **FFmpeg (For audio processing)**  
+🔗 [Download here](https://www.gyan.dev/ffmpeg/builds/)
+
+- Scroll down and download: `ffmpeg-git-essentials.7z`
+- Extract it (e.g., to `C:\ffmpeg`)
+- Locate the `bin` folder (e.g., `C:\ffmpeg\ffmpeg-2025-03-31-git-xxxxxx-essentials_build\bin`)
+
+🔧 **Add FFmpeg to your System & User PATH:**
+
+1. Open **Windows Search** > search for: `environment`
+2. Click: **Edit the system environment variables**
+3. In the window that opens, click: **Environment Variables**
+4. Under **System Variables**, double-click `Path`
+5. Click **New** and paste the full path to the `bin` folder
+6. Click OK on all windows to save
+
+✅ FFmpeg is now available system-wide!
+
+---
+
+## 🚀 First-Time Setup
+
+1. Double-click `Type2Talk.exe`
+2. On first launch, enter:
    - Your **Discord User ID**
    - Your **Discord Token**
    - Preferred **TTS Voice** (e.g., `en-US-GuyNeural`)
-3. These settings will be saved to `config.json`
-4. The program run in the background.
+3. These settings are saved to `config.json`
+4. Type2Talk will now run in the background
 
--------------------------------------
-⚙️ Updating Settings:
-- Open `config.json` in any text editor.
-- Edit your voice, token, or user ID manually.
-- Save and restart the program.
+---
 
--------------------------------------
-❗ Important Notes:
-- This is a **selfbot**, meaning it automates a user account.
-- Selfbots are against Discord’s official Terms of Service.
-- Use responsibly and only in private servers or for personal use.
-- Never share your Discord token with anyone!
+## ⚙️ Updating Settings
 
--------------------------------------
+- Open `config.json` with any text editor
+- Edit your:
+  - `VOICE`
+  - `DISCORD_TOKEN`
+  - `OWNER_ID`
+- Save the file and restart the program
 
-Enjoy using Type2Talk!
+---
 
+## ❗ Important Notes
 
-HOW TO SELECT THE SPEAKER AFTER THE VB INSTALLATION AND RESTARTING THE SYSTEM
-![Screenshot 2025-04-20 215826](https://github.com/user-attachments/assets/e1167e62-bdc0-45c6-8fd9-94e03025609e)
-![Screenshot 2025-04-20 215748](https://github.com/user-attachments/assets/0908d6f6-49c1-4312-a430-6c3ad23245e3)
-SELECT YOUR OUTPUT DEVICE THAT YOU NORMALLY USE TO LISTEN TO AUDIO
+- This is a **selfbot** — it automates a user account
+- ❌ **Against Discord’s ToS** — use only for personal/private purposes
+- 🛡️ Never share your **Discord token** with anyone
 
-HOW TO ADD FFMPEG INTO YOUR SYSTEM AND USER PATH
-![Screenshot 2025-04-20 213857](https://github.com/user-attachments/assets/a62e9fb6-542a-4e43-860e-beb00e3a0d7c)
-![Screenshot 2025-04-20 213925](https://github.com/user-attachments/assets/1a2ffb96-6fe6-4bb6-8be5-8d4f52f302fd)
-![Screenshot 2025-04-20 214217](https://github.com/user-attachments/assets/cbd3b947-b20e-43e0-8441-83e5fa47c913)
+---
 
+## 📸 Screenshots
 
+### 🔈 **How to Select Your Speaker After VB-CABLE Installation**
+![Screenshot 1](https://github.com/user-attachments/assets/e1167e62-bdc0-45c6-8fd9-94e03025609e)  
+![Screenshot 2](https://github.com/user-attachments/assets/0908d6f6-49c1-4312-a430-6c3ad23245e3)  
+_Select the output device you normally use to listen to audio._
 
+---
 
+### ⚙️ **How to Add FFmpeg to System PATH**
+![Screenshot 3](https://github.com/user-attachments/assets/a62e9fb6-542a-4e43-860e-beb00e3a0d7c)  
+![Screenshot 4](https://github.com/user-attachments/assets/1a2ffb96-6fe6-4bb6-8be5-8d4f52f302fd)  
+![Screenshot 5](https://github.com/user-attachments/assets/cbd3b947-b20e-43e0-8441-83e5fa47c913)
 
+---
+
+## 🎉 Enjoy using **Type2Talk**!
+
+Feel free to contribute, report issues, or suggest features via GitHub Issues.
