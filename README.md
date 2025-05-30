@@ -4,12 +4,8 @@ Type2Talk - Selfbot TTS for Discord
 🔊 Description:
 Type2Talk is a background selfbot that reads your own Discord messages aloud using realistic AI text-to-speech (TTS). It sends the voice to your mic using VB-CABLE, so others on a call can hear it as if you're speaking.
 
--------------------------------------
-📦 Files Included:
-- Type2Talk.exe         → Main executable
-- text-to-speech.ico    → System tray icon
-- README.txt            → This instruction file
-- config.json           → (Auto-generated after first run)
+Type2Talk v2 has the same features as the older version, but one thing has been added in v2: the /cmd function. This means you can play a song using /cmd in any server you want, and the audio will pass through both the Discord input channel and your local speaker.
+Use /cmd list to learn how the command works and its functions.
 
 -------------------------------------
 🖥️ System Requirements:
